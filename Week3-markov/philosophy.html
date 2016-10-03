@@ -1,0 +1,20 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var satanismGen = new MarkovGeneratorWord(2,50)
+var bibleGen = new MarkovGeneratorWord(2,50)
+$.get("satanism.txt", function(text) {
+     satanismSays.feed(text);
+});
+$.get("bible.txt", function(text) {
+     bibleSays.feed(text);
+});
+function generate(){
+	var satanismSays = satanismGen.generate()
+	$('body').append("<p>"+satanismSays+"</p>")
+	var bibleSays = bibleGen.generate()
+	$('body').append("<p>"+bibleSays+"</p>")
+
+}
+</script>
+<button onclick="generate()">Generate</button>

@@ -1,0 +1,28 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var cinderellaGen = new MarkovGeneratorWord(2,34)
+var grimmGen = new MarkovGeneratorWord(2,34)
+
+$.get("cinderella.txt", function(text) {
+     cinderellaGen.feed(text);
+});
+$.get("grimm.txt", function(text) {
+     grimmGen.feed(text);
+});
+
+
+function generate(){
+	var cinderellaSays = cinderellaGen.generate()
+	$('body').append("<p>"+cinderellaSays+"</p>")
+	var grimmSays = grimmGen.generate()
+	// grimmSays = grimmSays.slice(0,getRandInt(0,grimmSays.length)) + "--"
+	$('body').append("<p>"+grimmSays+"</p>")
+
+}
+// function getRandInt(min,max){
+// 	return Math.floor(Math.random() * (max+1-min)) +min
+// }
+
+</script>
+<button onclick="generate()">Generate</button>

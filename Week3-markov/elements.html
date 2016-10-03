@@ -1,0 +1,15 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var txt;
+var elementGen = new MarkovGenerator(2,8)
+$.get("allElements.txt", function(text) {
+     elementGen.feed(text);
+});
+function generate(){
+	var elementSaid = elementGen.generate()
+	$('h1').text(elementSaid);
+}
+</script>
+<h1>I bet you can't name all the elements in the periodic table!</h1>
+<button onclick="generate()">Prove him wrong!</button>

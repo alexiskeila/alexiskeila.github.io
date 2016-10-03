@@ -1,0 +1,20 @@
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+var txt;
+var grimmGen = new MarkovGeneratorWord(2,16)
+
+$.get("grimm.txt", function(text) {
+     grimmGen.feed(text);
+});
+
+$.get("cinderella.txt", function(text) {
+	grimmGen.feed(text);
+});
+function generate(){
+	var t = grimmGen.generate()
+	$('h1').text(t);
+}
+</script>
+<h1>Grimmer</h1>
+<button onclick="generate()">Generate</button>
