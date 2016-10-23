@@ -1,6 +1,9 @@
 <script src="../lib/jquery-1.11.1.min.js"></script>
 <script src="../lib/responsivevoice.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+<!-- <audio controls autoplay>
+    <source src= "noise.mp3" type="audio/mpeg">
+</audio> -->
 <style>
 html { 
   background: url(https://media.tenor.co/images/2c73553b485abe5bd37ea6d92d8d192a/raw); 
@@ -23,6 +26,10 @@ h1{
 
 }
 </style>
+
+<audio controls autoplay>
+    <source src="noise.mp3" type="audio/mped">
+</audio>
 
 <div id="textDiv"></div>
 <button onclick="begin()">Play</button>
@@ -108,7 +115,7 @@ $.get("gameofgods.txt", function(text) {
      txt = text;
 });
 function begin(){
-    typeText(txt,67)
+    typeText(txt,67.3)
     speak(txt,0.8)
 }
 function typeText(string, speed) {
