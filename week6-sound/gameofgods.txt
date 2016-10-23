@@ -7,27 +7,28 @@ Well.
 I have some big news for you.
 You were all right.
 Samuel, 
-God is real — Player 1.
+God is real. Remember, he is Player 1.
 Aalim, 
-Allah is real — Player 2.
+Allah is real. Remember, he is Player 2.
 Enmei, 
-Your deities are real. 
-(Although, they are slightly weaker) — Player 3.
+Your deities are real, though slightly weaker. Remember they are Player 3.
 All your gods are real. 
 Big news, right?
 But, 
-there is also some bad news.
+there is also some “bad news.”
 Humans are simulations.
+You see, 
 The Gods like to play games, 
 and you are their avatars.
 When they say jump, you jump.
 When they say duck, you duck.
 When they say fight, you fight. (That is, to the death of course.)
-And—
-you must listen carefully now— 
-when they say die, you must die.
-It’s imperative you don’t forget that one.
+And— 
+You must listen carefully now— 
+When they say die, you must die.
+It is imperative you don’t forget that one.
 Good?
+   
 Great!
 Just to be clear, 
 when you die, you will return to where you came from.
@@ -35,18 +36,21 @@ That is — nothing.
 Are we clear?
 Fantastic!
 Everyone, get ready now.
-Life on the Planet Earth can be pretty tricky now that you know, 
+Life on the Planet Earth can be pretty tricky now that you know about The Game, 
 and there are many rules to follow.
 The most important rules are:
 Rule 1: You must always put yourself, and your God, first.
 Rule 2: You must avoid, whenever possible, making alliances with others.
-Rule 3: You must always, always, try to win.
+Rule 3: You must never speak of The Game.
+Rule 4: You must always, always, try to win.
 Your Gods trust you know these rules well.
 Your Gods chose you for your skill.
 Do not let your Gods down, men.
 Remember, their will prevails.
 Are you ready?
-Your game will begin in 5.
+Your game will begin in 
+
+		5.
 
 
 
@@ -55,7 +59,7 @@ Your game will begin in 5.
 
      
  
-4.
+		4.
 
 
 
@@ -64,7 +68,7 @@ Your game will begin in 5.
 
 
         
-3.
+		3.
 
 
 
@@ -73,7 +77,7 @@ Your game will begin in 5.
 
 
 
-2.
+		2.
 
 
 
@@ -84,7 +88,7 @@ Your game will begin in 5.
 
 
             
-1.
+		1.
 
 
 
@@ -93,7 +97,7 @@ Your game will begin in 5.
 
 
 
-BEGIN
+		BEGIN
 
 
 
