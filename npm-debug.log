@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'week4-bots/package',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.9
+3 info using node@v4.5.0
+4 verbose install initial load of /Users/Essi/Desktop/alexiskeila.github.io/alexiskeila.github.io/package.json
+5 verbose installManyTop reading scoped package data from /Users/Essi/Desktop/alexiskeila.github.io/alexiskeila.github.io/node_modules/package/package.json
+6 verbose installManyTop reading scoped package data from /Users/Essi/Desktop/alexiskeila.github.io/alexiskeila.github.io/node_modules/twit/package.json
+7 info package.json package@1.0.1 No license field.
+8 verbose readDependencies loading dependencies from /Users/Essi/Desktop/alexiskeila.github.io/alexiskeila.github.io/package.json
+9 silly cache add args [ 'week4-bots/package', null ]
+10 verbose cache add spec week4-bots/package
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'week4-bots/package',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'week4-bots/package',
+11 silly cache add   spec: 'github:week4-bots/package',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:week4-bots/package.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/week4-bots/package.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/week4-bots/package.git',
+11 silly cache add      gitUrl: 'git://github.com/week4-bots/package.git',
+11 silly cache add      shortcut: 'github:week4-bots/package',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/week4-bots/package/master/package.json' } }
+12 verbose addRemoteGit caching week4-bots/package
+13 verbose addRemoteGit week4-bots/package is a repository hosted by github
+14 silly tryGitProto attempting to clone git://github.com/week4-bots/package.git
+15 silly tryClone cloning week4-bots/package via git://github.com/week4-bots/package.git
+16 verbose tryClone git-github-com-week4-bots-package-git-e74bafd4 not in flight; caching
+17 verbose correctMkdir /Users/Essi/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/Users/Essi/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'git://github.com/week4-bots/package.git',
+18 info git   '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-e74bafd4' ]
+19 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-e74bafd4: Cloning into bare repository '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-e74bafd4'...
+19 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-e74bafd4: fatal: remote error:
+19 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-e74bafd4:   Repository not found.
+20 silly tryHTTPS attempting to clone git+https://github.com/week4-bots/package.git
+21 silly tryClone cloning week4-bots/package via git+https://github.com/week4-bots/package.git
+22 verbose tryClone https-github-com-week4-bots-package-git-911169ad not in flight; caching
+23 verbose correctMkdir /Users/Essi/.npm/_git-remotes correctMkdir not in flight; initializing
+24 info git [ 'clone',
+24 info git   '--template=/Users/Essi/.npm/_git-remotes/_templates',
+24 info git   '--mirror',
+24 info git   'https://github.com/week4-bots/package.git',
+24 info git   '/Users/Essi/.npm/_git-remotes/https-github-com-week4-bots-package-git-911169ad' ]
+25 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror https://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/https-github-com-week4-bots-package-git-911169ad: Cloning into bare repository '/Users/Essi/.npm/_git-remotes/https-github-com-week4-bots-package-git-911169ad'...
+25 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror https://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/https-github-com-week4-bots-package-git-911169ad: remote: Invalid username or password.
+25 verbose git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror https://github.com/week4-bots/package.git /Users/Essi/.npm/_git-remotes/https-github-com-week4-bots-package-git-911169ad: fatal: Authentication failed for 'https://github.com/week4-bots/package.git/'
+26 silly trySSH attempting to clone git@github.com:week4-bots/package.git
+27 silly tryClone cloning week4-bots/package via git@github.com:week4-bots/package.git
+28 verbose tryClone git-github-com-week4-bots-package-git-b43b78e6 not in flight; caching
+29 verbose correctMkdir /Users/Essi/.npm/_git-remotes correctMkdir not in flight; initializing
+30 info git [ 'clone',
+30 info git   '--template=/Users/Essi/.npm/_git-remotes/_templates',
+30 info git   '--mirror',
+30 info git   'git@github.com:week4-bots/package.git',
+30 info git   '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6' ]
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6: Cloning into bare repository '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6'...
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6: Permission denied (publickey).
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6: fatal: Could not read from remote repository.
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6:
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6: Please make sure you have the correct access rights
+31 error git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6: and the repository exists.
+32 verbose stack Error: Command failed: git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6
+32 verbose stack Cloning into bare repository '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6'...
+32 verbose stack Permission denied (publickey).
+32 verbose stack fatal: Could not read from remote repository.
+32 verbose stack
+32 verbose stack Please make sure you have the correct access rights
+32 verbose stack and the repository exists.
+32 verbose stack
+32 verbose stack     at ChildProcess.exithandler (child_process.js:213:12)
+32 verbose stack     at emitTwo (events.js:87:13)
+32 verbose stack     at ChildProcess.emit (events.js:172:7)
+32 verbose stack     at maybeClose (internal/child_process.js:829:16)
+32 verbose stack     at Socket.<anonymous> (internal/child_process.js:319:11)
+32 verbose stack     at emitOne (events.js:77:13)
+32 verbose stack     at Socket.emit (events.js:169:7)
+32 verbose stack     at Pipe._onclose (net.js:486:12)
+33 verbose cwd /Users/Essi/Desktop/alexiskeila.github.io/alexiskeila.github.io
+34 error Darwin 13.4.0
+35 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "week4-bots/package" "--save"
+36 error node v4.5.0
+37 error npm  v2.15.9
+38 error code 128
+39 error Command failed: git clone --template=/Users/Essi/.npm/_git-remotes/_templates --mirror git@github.com:week4-bots/package.git /Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6
+39 error Cloning into bare repository '/Users/Essi/.npm/_git-remotes/git-github-com-week4-bots-package-git-b43b78e6'...
+39 error Permission denied (publickey).
+39 error fatal: Could not read from remote repository.
+39 error
+39 error Please make sure you have the correct access rights
+39 error and the repository exists.
+40 error If you need help, you may report this error at:
+40 error     <https://github.com/npm/npm/issues>
+41 verbose exit [ 1, true ]

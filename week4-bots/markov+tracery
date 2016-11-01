@@ -1,0 +1,28 @@
+<!-- all comments are changes made to tracery2
+ --><script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<!-- <script src="../lib/markov.js"></script> -->
+<script>
+// var markov = new MarkovGenerator(4,200, " ")
+// var text = "unicorn raven sparrow scorpion coyote eagle owl lizard zebra duck kitten"
+// markov.feed(text)
+
+function generate(){
+	// var markovPet = markov.generate()
+	//markovPet = markovPet.split(" ") (this cuts it off after the space. Include [0], [1] if u want one in particular. s.split(" ".slice(0,2).join(" "))
+	var grammarObj = {
+	//moved under generate function
+    "name": ["Arjun","Yuuma","Darcy","Mia","Chiaki","Izzi","Azra","Lina"],
+    // "animal": [markovPet],
+    "mood": ["vexed","indignant","impassioned","wistful","astute","courteous"],
+    "story": ["#hero# traveled with her pet #heroPet#.  #hero# was never #mood#, for the #heroPet# was always too #mood#."],
+    "origin": ["#[hero:#name#][heroPet:#animal#]story#"]
+	// markovPet = markov.generate()
+	// var grammar = tracery.createGrammar(grammarObj)
+	var t = grammar.flatten("#origin#");
+	$('h1').text(t);
+}
+</script>
+<h1>Text will go here</h1>
+<button onclick="generate()">Generate</button>

@@ -1,0 +1,24 @@
+{
+  "name": "week4-bots",
+  "version": "1.0.0",
+  "description": "twiiterbot",
+  "main": "markovBot.js",
+  "dependencies": {
+    "package": "^1.0.1",
+    "tracery-grammar": "^2.7.2",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "generate()"
+  },
+  "author": "alexiskeila",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "alexiskeila.github.io"
+  },
+  "keywords": [
+    "reddit"
+  ]
+}

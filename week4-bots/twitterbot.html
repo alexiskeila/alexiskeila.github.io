@@ -1,0 +1,44 @@
+<script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script>
+<script>
+
+
+var Twit = require('twit')
+
+var T = new Twit({
+  consumer_key:         'kNZlN2lsWyhlFcJINMzeaW65Q',
+  consumer_secret:      'Vs2LKnbkUsVntiaSbGX0wcmYrr0IDgvR0Ru2OwnpojFbU9GPcH',
+  access_token:         '785230213395451904-kZN3o7STQ03apaRoopvkvBE4DIlZKRZ',
+  access_token_secret:  'asY9Ckw2XcMSkvh5KtpHlE0VBICdiCe5D41WSjL2zOP0G',
+  timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
+})
+
+var fs = require('fs');
+eval(fs.readFileSync("nodeMarkov.js","utf-8"));
+
+var markov = new MarkovGeneratorWord(2,20)
+// $.get("urban.txt", function(text) {
+// 	markov.feed(text);
+// });
+var text = fs.readFileSync('urban.txt', "utf-8")
+markov.feed(text)
+
+function generate (){
+	var t = "sdlfkjahsdflkjhasldkfjhaslkdfjhalskdjfhlaksjdfhlaksjdhflkajshdflkasjhfaskdhaskjdfhgaskjdhfgj		kashdgfkjashgdfkjahsgdfkjhagsdfkjhgasdkfjhgaskdjfhgaksjdhfgaksjhdfg"
+	while (t.length > 140) {
+		var markovSlang = markov.generate()
+		var grammarObj = {
+	    	"verb": ["is about", "discusses", "talks about", "confers about", "deliberates", "chews over", "considers", "explores", "examines", "studies", "looks closely at", "analyzes", "goes into", "deals with", "concerns itelf with", "tackles", "regard", "is related to", "is for people who want to talk about", "is on the subject of", "is for users into", "is the primary subreddit for", "can be used to talk about", "is an idea exchange on", ", used to describe", "describes"],
+	    	"subreddit": 
+	    	"urban": [markovSlang]
+	    }
+		var grammar = tracery.createGrammar(grammarObj)
+		var t = grammar.flatten("/r/#subreddit# #verb# #urban#");
+	}
+    T.post('statuses/update', params, function (err, data, response) { console.log(t) })
+}
+
+generate()
+setInterval(generate,20 * 60 * 1000)

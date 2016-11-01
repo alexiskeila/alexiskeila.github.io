@@ -1,0 +1,85 @@
+<html>
+<meta charset="utf-8" />
+<head>
+<!-- This is how we incorporate all the javascript we'll use in the piece, it's important that we put the libraries first and the piece itself (jamesbrown.js) last, since jamesbrown.js references all the other libraries and that will only work if they are above it -->
+<script src="../../lib/jquery-1.11.1.min.js"></script>
+<script src="../../lib/mousetrap.min.js"></script>
+<script src="doriangray.js"></script> 
+<script src="../../lib/p5.min.js"></script>
+<!-- here's all the audio for the piece, preload='auto' means it will all load as fast as possible as the piece begins -->
+<audio id="d1" preload="auto" src="../dorian_voice/1.m4a"></audio>
+<audio id="d2" preload="auto" src="../dorian_voice/2.m4a"></audio>
+<audio id="d3" preload="auto" src="../dorian_voice/3.m4a"></audio>
+<audio id="d4" preload="auto" src="../dorian_voice/4.m4a"></audio>
+<audio id="d5" preload="auto" src="../dorian_voice/5.m4a"></audio>
+<audio id="d6" preload="auto" src="../dorian_voice/6.m4a"></audio>
+<audio id="d7" preload="auto" src="../dorian_voice/7.m4a"></audio>
+<audio id="d8" preload="auto" src="../dorian_voice/8.m4a"></audio>
+<audio id="d9" preload="auto" src="../dorian_voice/9.m4a"></audio>
+<audio id="d10" preload="auto" src="../dorian_voice/10.m4a"></audio>
+<audio id="d11" preload="auto" src="../dorian_voice/11.m4a"></audio>
+<audio id="d12" preload="auto" src="../dorian_voice/12.m4a"></audio>
+<audio id="d13" preload="auto" src="../dorian_voice/13.m4a"></audio>
+<audio id="d14" preload="auto" src="../dorian_voice/14.m4a"></audio>
+<audio id="d15" preload="auto" src="../dorian_voice/15.m4a"></audio>
+<audio id="d16" preload="auto" src="../dorian_voice/16.m4a"></audio>
+<audio id="d17" preload="auto" src="../dorian_voice/17.m4a"></audio>
+<audio id="d18" preload="auto" src="../dorian_voice/18.m4a"></audio>
+<audio id="d19" preload="auto" src="../dorian_voice/19.m4a"></audio>
+<audio id="title" preload="auto" autoplay src="../dorian_voice/Title.m4a"></audio>
+<!-- This is the CSS styles for the piece, this can be done right in the html or in a separate .css document -->
+<style>
+/*defines the font we'll be using from a .ttf (TrueType Font) file. i'm a big fan of this funky Fugaz One font*/
+@font-face {
+	font-family: 'Hijrnotes PERSONAL USE ONLY 01';
+	src: url('Hijrnotes PERSONAL USE ONLY 01.ttf');
+}
+/*This sets the background image to be fullscreen and centered across all browsers*/
+html { 
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*Sets the text to show up in our Fugaz One font and adds some top margins*/
+h1 {
+	font-family: 'Hijrnotes PERSONAL USE ONLY 01', Regular;
+	margin-top: 10.5%;
+	margin-left: 60%;
+	color: gold;
+	font-size: 4em;
+
+}
+h4 {
+	font-family: 'Hijrnotes PERSONAL USE ONLY 01', Regular;
+	margin-top: -4.5%;
+	margin-left: 65%;
+	color: gold;
+	font-size: 1.5em
+
+}
+/*Shifts text from left to right to fit around the corresponding background images*/
+.text-left {
+	margin-left: 10%;
+	width: 49%;
+	font-size: 4.4em;
+}
+.text-right {
+	width: 40%;
+}
+/*This is basically the same as the preload='auto' in the sound files but for images. It loads the images in the background but makes them invisible, but then when we switch to them there won't be any load time*/
+body:after{
+    display:none;
+    content: url(background.jpg) url(background.jpg);
+}
+</style>
+</head>
+<body>
+<!-- Here's where our text will show up -->
+<div id="writingDiv">
+<h1 id="someText" class="text-right">Dorian Gray</h1>
+<h4 id-"artist" class="text-right">artist: Basil Hallward</h4>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+--><script src="../lib/tracery.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/markov.js"></script> -->
+<script>
+var txt;
+var markov = new MarkovGeneratorWord(1,1)
+$.get("slang.txt", function(text) {
+	markov.feed(text);
+});
+// var text = "unicorn raven sparrow scorpion coyote eagle owl lizard zebra duck kitten"
+// markov.feed(text)
+
+function generate(){
+	var markovSlang = markov.generate()
+	// markovSlang = markovSlang.split(" ")
+	var grammarObj = {
+    "Number": [Math.floor((Math.random()*100000)+1);],
+    "slang": [markovSlang],
+    "definition": ["vexed","indignant","impassioned","wistful","astute","courteous"],
+    "": ["#hero# traveled with her Slang #heroSlang#.  #hero# was never #mood#, for the #heroSlang# was always too #mood#."],
+    "": ["#[hero:#name#][heroSlang:#animal#]story#"]
+	markovSlang = markov.generate()
+	var grammar = tracery.createGrammar(grammarObj)
+	var t = grammar.flatten("ENTRY #Number#: #slang# - #definition#");
+	$('h1').text(t);
+}
+</script>
+<h1>Text will go here</h1>
+<button onclick="generate()">Generate</button>
