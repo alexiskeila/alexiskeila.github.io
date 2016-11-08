@@ -1,0 +1,161 @@
+<!-- <img id="page1" src="page1gif.gif" /> -->
+
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../lib/mousetrap.min.js"></script>
+
+<!-- <button onclick="subPage()">hi</button>
+<button onclick="subPage()">hilo</button> -->
+
+<script>
+
+    var page = 1;
+    $(function (){ main(); });
+
+    function main() {
+        document.body.innerHTML = "";
+        if (page == 1) {
+            $('body').append('<img id="page1" width="1450" height="800" src="page1gif.png" style="position: absolute; left:'+0+'; top:'+0+'">');
+
+            $("#page1").hover(
+                function() {
+                    $(this).attr("src", "page1gif.gif");
+                },
+                function() {
+                    $(this).attr("src", "page1gif.png");
+                }                         
+            );  
+        } 
+        if (page == 2) {
+            $('body').append('<img id="page2_1" width="680" src="page2gif1.png" style="position: absolute; left:'+36+'; top:'+8+'">');
+
+            $("#page2_1").hover(
+                function() {
+                    $(this).attr("src", "page2gif1.gif");
+                },
+                function() {
+                    $(this).attr("src", "page2gif1.png");
+                }                         
+            );  
+            $('body').append('<img id="page2_2" width="680" src="page2gif2.png" style="position: absolute; left:'+36+'; top:'+392+'">');
+
+            $("#page2_2").hover(
+                function() {
+                    $(this).attr("src", "page2gif2.gif");
+                },
+                function() {
+                    $(this).attr("src", "page2gif2.png");
+                }                         
+            );  
+            $('body').append('<img id="page2_3" width="334" height="766" src="page2gif3.png" style="position: absolute; left:'+719+'; top:'+8+'">');
+
+            $("#page2_3").hover(
+                function() {
+                    $(this).attr("src", "page2gif3.gif");
+                },
+                function() {
+                    $(this).attr("src", "page2gif3.png");
+                }                         
+            );  
+            $('body').append('<img id="page2_4" width="334" height="766" src="page2gif4.png" style="position: absolute; left:'+1056+'; top:'+8+'">');
+
+            $("#page2_4").hover(
+                function() {
+                    $(this).attr("src", "page2gif4.gif");
+                },
+                function() {
+                    $(this).attr("src", "page2gif4.png");
+                }                         
+            );  
+        }  
+        if (page == 3) {
+            $('body').append('<img id="page3_1" width="1366" height="382.31" src="page3gif1.png" style="position: absolute; left:'+36+'; top:'+8+'">');
+
+            $("#page3_1").hover(
+                function() {
+                    $(this).attr("src", "page3gif1.gif");
+                },
+                function() {
+                    $(this).attr("src", "page3gif1.png");
+                }                         
+            );  
+            $('body').append('<img id="page3_2" width="auto" height="382.31" src="page3gif2.png" style="position: absolute; left:'+36+'; top:'+392+'">');
+
+            $("#page3_2").hover(
+                function() {
+                    $(this).attr("src", "page3gif2.gif");
+                },
+                function() {
+                    $(this).attr("src", "page3gif2.png");
+                }                         
+            ); 
+            $('body').append('<img id="page3_3" width="auto" height="382.31" speed="2.0" src="page3gif3.png" style="position: absolute; left:'+720+'; top:'+392+'">');
+
+            $("#page3_3").hover(
+                function() {
+                    $(this).attr("src", "page3gif3.gif");
+                    $(this).attr("speed", "3.0");
+                },
+                function() {
+                    $(this).attr("src", "page3gif3.png");
+                    $(this).attr("speed", "0.0");
+                }                         
+            );  
+        }
+        if (page == 4) {
+            $('body').append('<img id="page4_1" width="auto" src="page4gif1.png" style="position: absolute; left:'+36+'; top:'+8+'">');
+
+            $("#page4_1").hover(
+                function() {
+                    $(this).attr("src", "page4gif1.gif");
+                },
+                function() {
+                    $(this).attr("src", "page4gif1.png");
+                }                         
+            );  
+            $('body').append('<img id="page4_2" width="auto" src="page4gif2.png" style="position: absolute; left:'+380+'; top:'+8+'">');
+
+            $("#page4_2").hover(
+                function() {
+                    $(this).attr("src", "page4gif2.gif");
+                },
+                function() {
+                    $(this).attr("src", "page4gif2.png");
+                }                         
+            ); 
+            $('body').append('<img id="page4_3" width="auto" speed="2.0" src="page4gif3.png" style="position: absolute; left:'+724+'; top:'+8+'">');
+
+            $("#page4_3").hover(
+                function() {
+                    $(this).attr("src", "page4gif3.gif");
+                },
+                function() {
+                    $(this).attr("src", "page4gif3.png");
+                }                         
+            );  
+            $('body').append('<img id="page4_4" width="auto" speed="2.0" src="page4gif4.png" style="position: absolute; left:'+1068+'; top:'+8+'">');
+            $("#page4_4").hover(
+                function() {
+                    $(this).attr("src", "page4gif4.gif");
+                },
+                function() {
+                    $(this).attr("src", "page4gif4.png");
+                }                         
+            );  
+        }
+    }
+
+
+
+    Mousetrap.bind('left', function subPage() {
+        page = Math.max(1 , page - 1);
+        //console.log(page);
+        main();
+    });
+
+    Mousetrap.bind('right', function plusPage() {
+        page = Math.min(4, page + 1);
+        //console.log(page);
+        main();
+    });
+
+</script>
