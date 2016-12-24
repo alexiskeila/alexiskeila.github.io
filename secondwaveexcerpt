@@ -4,30 +4,26 @@
 	h1 {
 	font-family: 'Berkshire Swash', cursive;
 	src: url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
-	margin-top: 5%;
-	margin-left: 10%;
-	color: pink;
+	margin-top: 10.5%;
+	margin-left: 60%;
+	color: gold;
 	font-size: 4em;
 	}
 
 	h2 {
 	font-family: 'Berkshire Swash', cursive;
-	margin-left: 15%;
-	color: pink;
-	font-size: 2em;
+	margin-top: 10.5%;
+	margin-left: 60%;
+	color: gold;
+	font-size: 4em;
 	}
-/*	.text-left {
+	.text-left {
 	margin-left: 10%;
 	width: 49%;
 	font-size: 4.4em;
 	}
 	.text-right {
 	width: 40%;
-	}*/
-
-	p {
-	margin-left: 15%;
-	margin-right: 15%;
 	}
 
 	</style>
