@@ -5,13 +5,7 @@
 <h2>(n.) a poem with six stanzas of six lines, all stanzas having<br>the same six words at the line-ends in six different sequences<br> and a final triplet, that follow a fixed pattern.</h2>
 <button onclick="generate()">Compose Sestina</button>
 <script>
-var baseGramm = [["#lineA#", "#lineB#", "#lineC#", "#lineD#", "#lineE#", "#lineF#"], 
-					["#lineF#", "#lineA#", "#lineE#", "#lineB#", "#lineD#", "#lineC#"],
-					["#lineC#", "#lineF#", "#lineD#", "#lineA#", "#lineB#", "#lineE#"],
-					["#lineE#", "#lineC#", "#lineB#", "#lineF#", "#lineA#", "#lineD#"],
-					["#lineD#", "#lineE#", "#lineA#", "#lineC#", "#lineF#", "#lineB#"],
-					["#lineB#", "#lineD#", "#lineF#", "#lineE#", "#lineC#", "#lineA#"],
-					["#lineG#", "#lineH#", "#lineI#", "#lineJ#", "#lineK#", "#lineL#"]];
+
 var grammarObj = {
 	"origin"  : ["#[wordA:#wordAwords#][wordB:#wordBwords#][wordC:#wordCwords#][wordD:#wordDwords#][WordE:#WordEwords#][wordF:#wordFwords#]Sestina#"], 
 	"Sestina" : ["#stanza1#" + "#stanza2#" + "#stanza3#" + "#stanza4#" + "#stanza5#" + "#stanza6#" + "#stanza7#"],
