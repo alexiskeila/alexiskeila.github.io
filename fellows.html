@@ -5,4 +5,39 @@
 <h2>(n.) a poem with six stanzas of six lines, all stanzas having<br>the same six words at the line-ends in six different sequences<br> and a final triplet, that follow a fixed pattern.</h2>
 <button onclick="generate()">Compose Sestina</button>
 <script>
-
+  
+ var grammarObj = {
+ "origin"  : ["#[object:#objectAwords#][action:#actionBwords#][descriptor:#descriptorCwords#][feeling:#feelingDwords#][place:#placeEwords#][people:#peopleFwords#]Sestina#"], 
+	"Sestina" : ["#stanza1#" + "#stanza2#" + "#stanza3#" + "#stanza4#" + "#stanza5#" + "#stanza6#" + "#stanza7#"],
+	"stanza1" : ["#lineA#<br>" + "#lineB#<br>" + "#lineC#<br>" + "#lineD#<br>" + "#lineE#<br>" + "#lineF#<br><br>"], 
+	"stanza2" : ["#lineF#<br>" + "#lineA#<br>" + "#lineE#<br>" + "#lineB#<br>" + "#lineD#<br>" + "#lineC#<br><br>"], 
+	"stanza3" : ["#lineC#<br>" + "#lineF#<br>" + "#lineD#<br>"+ "#lineA#<br>" + "#lineB#<br>" + "#lineE#<br><br>"], 
+	"stanza4" : ["#lineE#<br>"+ "#lineC#<br>" + "#lineB#<br>" + "#lineF#<br>" + "#lineA#<br>" + "#lineD#<br><br>"], 
+	"stanza5" : ["#lineD#<br>" + "#lineE#<br>" + "#lineA#<br>" + "#lineC#<br>" + "#lineF#<br>" + "#lineB#<br><br>"], 
+	"stanza6" : ["#lineB#<br>" + "#lineD#<br>" + "#lineF#<br>" + "#lineE#<br>" + "#lineC#<br>" + "#lineA#<br><br>"],
+	"stanza7" : ["#lineG#" + "#lineH#<br>" + "#lineI#" + "#lineJ#<br>" + "#lineK#" + "#lineL#<br>"],
+	"lineA" : ["JSENJAFNCA"],
+	"lineB" : ["edbabcfaksdhc"],
+	"lineC" : ["edbabcfaksdhc"],
+	"lineD" : ["edbabcfaksdhc"],
+	"lineE" : ["edbabcfaksdhc"],
+	"lineF" : ["edbabcfaksdhc"],
+	"lineG" : ["edbabcfaksdhc"],
+	"lineH" : ["edbabcfaksdhc"],
+	"lineI" : ["edbabcfaksdhc"],
+	"lineJ" : ["edbabcfaksdhc"],
+	"lineK" : ["edbabcfaksdhc"],
+	"lineL" : ["edbabcfaksdhc"],
+	"objectAwords" : ["edbabcfaksdhc"],
+	"actionBwords" : ["edbabcfaksdhc"],
+	"descriptorCwords" : ["edbabcfaksdhc"],
+	"feelingDwords" : ["edbabcfaksdhc"],
+	"placeEwords" : ["edbabcfaksdhc"],
+	"peopleFwords" : ["edbabcfaksdhc"]
+ }
+var grammar = tracery.createGrammar(grammarObj)
+function generate(){
+		var t = grammar.flatten("#origin#");
+		$('body').append("<p>"+t+"</p>");
+};
+</script>
